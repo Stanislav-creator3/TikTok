@@ -1,0 +1,24 @@
+.header {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100vw - 64px);
+    padding: 12px 32px;
+    transition: all .3s ease;
+
+    &.visible {
+        transform: translateY(0%);
+
+    }
+    &.hidden {
+        transform: translateY(-100%);
+    }
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+}

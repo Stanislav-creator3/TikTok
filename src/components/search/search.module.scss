@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+
+  svg {
+    padding-right: 5px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  outline: 0;
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  background: #262525;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+    background: #4f4f4f;
+  }
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+
+
+  &__item {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+
+  };
+}
